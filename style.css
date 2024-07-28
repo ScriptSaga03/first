@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+
+p {
+  font-family: "Outfit";
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 600px;
+  color: slategrey;
+}
+
+header {
+  width: 100%;
+  height: 80vh;
+  margin-block: 40px;
+  background-image: url("./assets/images/image-omelette.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 28px;
+}
+
+.aboutRecipe {
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.aboutRecipe .prepration {
+  margin-block: 50px;
+  background-color: #fff7fc;
+  padding: 40px;
+}
+
+.prepration h3 {
+  color: #7d4537;
+  font-family: "Outfit";
+  font-weight: 700;
+}
+
+.prepration ul li {
+  margin-top: 10px;
+  margin-left: 35px;
+  color: grey;
+}
+
+.prepration ul li span {
+  color: slategray;
+  font-family: "Outfit";
+  font-weight: 400;
+}
+
+.ingredients {
+  height: 300px;
+  border-bottom: 1px solid grey;
+  margin-bottom: 30px;
+}
+
+.ingredients h3 {
+  font-size: 2rem;
+  color: #7d4537;
+}
+
+.ingredients ul {
+  margin-left: 30px;
+  font-family: "Outfit";
+  font-weight: 400;
+  color: slategray;
+}
+
+.ingredients ul li {
+  padding: 10px;
+}
+
+.instruction {
+  max-width: 80%;
+}
+
+.instruction h3 {
+  color: #7d4537;
+  font-size: 2rem;
+}
+
+.instruction ol {
+  margin-left: 35px;
+}
+
+.instruction ol li {
+  color: grey;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.instruction ol li span {
+  font-family: "Outfit";
+  font-weight: 400;
+  color: slategray;
+}
+
+.nutrition {
+  margin-block: 25px;
+}
+
+.nutrition h3 {
+  color: #7d4537;
+  margin-block: 20px;
+  font-size: 2rem;
+}
+
+.nutrition p {
+  font-family: "Outfit";
+  font-weight: 400;
+}
+
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition td {
+  padding: 12px;
+  border-bottom: 1px solid gray; /* Single line border for each cell */
+  background-color: white;
+}
+
+.nutrition td:nth-child(1) {
+  color: gray;
+}
+
+.nutrition td:nth-child(2) {
+  color: #7d4537;
+}
+
+/* मोबाइल साइज के लिए रेस्पॉन्सिव स्टाइल्स */
+@media (max-width: 375px) {
+  body {
+    font-size: 14px;
+    padding: 0; /* स्क्रीन के किनारे पर पैडिंग को हटा दें */
+  }
+
+  header {
+    height: 60vh; /* छोटे स्क्रीन के लिए हेडर की ऊँचाई घटा दें */
+    margin: 0; /* हेडर से मार्जिन हटा दें */
+    border-radius: 0; /* हेडर के किनारे को फ्लैट कर दें */
+  }
+  .aboutRecipe,
+  .prepration,
+  .ingredients,
+  .instruction,
+  .nutrition {
+    margin-top: 15px;
+    padding: 0 12px;
+  }
+  h1 {
+    font-size: 2rem; /* हेडिंग का फॉन्ट साइज घटा दें */
+  }
+
+  .prepration h3,
+  .instruction h3,
+  .ingredients h3,
+  .nutrition h3 {
+    font-size: 1.5rem; /* सभी हेडिंग्स का फॉन्ट साइज घटा दें */
+  }
+
+
+  .ingredients ul {
+    margin-left: 20px; /* मार्जिन घटा दें */
+  }
+
+  .instruction ol {
+    margin-left: 20px; /* मार्जिन घटा दें */
+  }
+
+  .instruction ol li,
+  .prepration ul li {
+    padding: 5px; /* पैडिंग घटा दें */
+  }
+
+  .nutrition td {
+    font-size: 14px; /* टेबल सेल्स का फॉन्ट साइज घटा दें */
+    padding: 8px; /* पैडिंग घटा दें */
+  }
+}
